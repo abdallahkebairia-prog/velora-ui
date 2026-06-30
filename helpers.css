@@ -1,0 +1,339 @@
+/*==============================================================================
+  Velora UI Framework v1.0
+  ------------------------------------------------------------------------------
+  File        : 05-helpers.css
+  Layer       : helpers
+  Description : Helper Classes
+==============================================================================*/
+
+@layer helpers {
+
+/*==============================================================================
+  Screen Reader Only
+==============================================================================*/
+
+.vu-sr-only{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    padding:0;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+    border:0;
+
+}
+
+/*==============================================================================
+  Visibility
+==============================================================================*/
+
+.vu-hidden{
+
+    display:none;
+
+}
+
+.vu-invisible{
+
+    visibility:hidden;
+
+}
+
+.vu-visible{
+
+    visibility:visible;
+
+}
+
+/*==============================================================================
+  Overflow
+==============================================================================*/
+
+.vu-overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.vu-overflow-auto{
+
+    overflow:auto;
+
+}
+
+.vu-overflow-scroll{
+
+    overflow:scroll;
+
+}
+
+/*==============================================================================
+  Position
+==============================================================================*/
+
+.vu-relative{
+
+    position:relative;
+
+}
+
+.vu-absolute{
+
+    position:absolute;
+
+}
+
+.vu-fixed{
+
+    position:fixed;
+
+}
+
+.vu-sticky{
+
+    position:sticky;
+
+}
+
+/*==============================================================================
+  Z-Index
+==============================================================================*/
+
+.vu-z-dropdown{
+
+    z-index:var(--vu-z-dropdown);
+
+}
+
+.vu-z-sticky{
+
+    z-index:var(--vu-z-sticky);
+
+}
+
+.vu-z-fixed{
+
+    z-index:var(--vu-z-fixed);
+
+}
+
+.vu-z-modal{
+
+    z-index:var(--vu-z-modal);
+
+}
+
+.vu-z-tooltip{
+
+    z-index:var(--vu-z-tooltip);
+
+}
+
+/*==============================================================================
+  Aspect Ratio
+==============================================================================*/
+
+.vu-ratio-square{
+
+    aspect-ratio:1;
+
+}
+
+.vu-ratio-video{
+
+    aspect-ratio:16 / 9;
+
+}
+
+.vu-ratio-portrait{
+
+    aspect-ratio:3 / 4;
+
+}
+
+/*==============================================================================
+  Object Fit
+==============================================================================*/
+
+.vu-object-cover{
+
+    object-fit:cover;
+
+}
+
+.vu-object-contain{
+
+    object-fit:contain;
+
+}
+
+.vu-object-fill{
+
+    object-fit:fill;
+
+}
+
+/*==============================================================================
+  Text Helpers
+==============================================================================*/
+
+.vu-break-word{
+
+    overflow-wrap:break-word;
+
+}
+
+.vu-nowrap{
+
+    white-space:nowrap;
+
+}
+
+/*==============================================================================
+  Pointer Events
+==============================================================================*/
+
+.vu-pointer-none{
+
+    pointer-events:none;
+
+}
+
+.vu-pointer-auto{
+
+    pointer-events:auto;
+
+}
+
+/*==============================================================================
+  User Select
+==============================================================================*/
+
+.vu-select-none{
+
+    user-select:none;
+
+}
+
+.vu-select-all{
+
+    user-select:all;
+
+}
+
+.vu-select-text{
+
+    user-select:text;
+
+}
+
+/*==============================================================================
+  Cursor
+==============================================================================*/
+
+.vu-cursor-pointer{
+
+    cursor:pointer;
+
+}
+
+.vu-cursor-default{
+
+    cursor:default;
+
+}
+
+.vu-cursor-not-allowed{
+
+    cursor:not-allowed;
+
+}
+
+/*==============================================================================
+  Border Radius
+==============================================================================*/
+
+.vu-rounded{
+
+    border-radius:var(--vu-radius-md);
+
+}
+
+.vu-rounded-sm{
+
+    border-radius:var(--vu-radius-sm);
+
+}
+
+.vu-rounded-lg{
+
+    border-radius:var(--vu-radius-lg);
+
+}
+
+.vu-rounded-full{
+
+    border-radius:var(--vu-radius-full);
+
+}
+
+/*==============================================================================
+  Shadow
+==============================================================================*/
+
+.vu-shadow-xs{
+
+    box-shadow:var(--vu-shadow-xs);
+
+}
+
+.vu-shadow-sm{
+
+    box-shadow:var(--vu-shadow-sm);
+
+}
+
+.vu-shadow-md{
+
+    box-shadow:var(--vu-shadow-md);
+
+}
+
+.vu-shadow-lg{
+
+    box-shadow:var(--vu-shadow-lg);
+
+}
+
+.vu-shadow-xl{
+
+    box-shadow:var(--vu-shadow-xl);
+
+}
+
+/*==============================================================================
+  Clearfix
+==============================================================================*/
+
+.vu-clearfix::after{
+
+    content:"";
+
+    display:block;
+
+    clear:both;
+
+}
+
+}

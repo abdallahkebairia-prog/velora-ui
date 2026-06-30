@@ -1,0 +1,158 @@
+/*==============================================================================
+  Velora UI Framework v1.0
+  ------------------------------------------------------------------------------
+  File        : style.css
+  Layer       : final
+  Description : Global Polish & Composition Layer
+==============================================================================*/
+
+@layer final {
+
+/*==============================================================================
+  GLOBAL BODY OPTIMIZATION
+==============================================================================*/
+
+body {
+
+    font-family: var(--vu-font-family, system-ui, sans-serif);
+
+    background: var(--vu-color-background);
+    color: var(--vu-color-text);
+
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+/*==============================================================================
+  SELECTION STYLE
+==============================================================================*/
+
+::selection {
+
+    background: var(--vu-color-primary);
+    color: #ffffff;
+
+}
+
+/*==============================================================================
+  FOCUS RING (GLOBAL ACCESSIBILITY POLISH)
+==============================================================================*/
+
+:focus-visible {
+
+    outline: 2px solid var(--vu-color-focus);
+    outline-offset: 2px;
+
+}
+
+/*==============================================================================
+  LINKS GLOBAL POLISH
+==============================================================================*/
+
+a {
+
+    color: var(--vu-color-primary);
+    text-decoration: none;
+
+    transition: color var(--vu-duration-fast, 150ms)
+                var(--vu-ease-standard, ease);
+
+}
+
+a:hover {
+
+    color: var(--vu-color-primary-hover);
+
+}
+
+/*==============================================================================
+  BUTTON RESET POLISH
+==============================================================================*/
+
+button {
+
+    font-family: inherit;
+
+}
+
+/*==============================================================================
+  IMAGE HANDLING
+==============================================================================*/
+
+img {
+
+    max-width: 100%;
+    display: block;
+
+}
+
+/*==============================================================================
+  FORM ELEMENTS BASE POLISH
+==============================================================================*/
+
+input,
+textarea,
+select {
+
+    font-family: inherit;
+
+    color: inherit;
+
+}
+
+/*==============================================================================
+  SCROLLBAR (OPTIONAL MODERN UX)
+==============================================================================*/
+
+::-webkit-scrollbar {
+
+    width: 10px;
+    height: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: var(--vu-color-surface);
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--vu-color-border);
+    border-radius: 6px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--vu-color-primary);
+
+}
+
+/*==============================================================================
+  GLOBAL SPACING CONSISTENCY FIX (MICRO POLISH)
+==============================================================================*/
+
+p, ul, ol {
+
+    margin-bottom: 1rem;
+
+}
+
+/*==============================================================================
+  MEDIA BASE FIX
+==============================================================================*/
+
+video,
+canvas,
+svg {
+
+    max-width: 100%;
+
+}
+
+}
